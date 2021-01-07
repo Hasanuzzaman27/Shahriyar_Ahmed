@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/6170a6ae3e.js" crossorigin="anonymous"></script>
+<title>Shahriyar Ahmed Shuvo</title>
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+}
+body{
+margin: 0;
+padding: 0;
+}
+.Container{
+padding: 70px 0px;
+}
+.btn{
+width: 260px;
+height: 130px;
+border: none;
+outline: none;
+background: #109dff;
+border-radius: 20px;				
+color: #fff;
+font-size: 50px;
+font-weight: bold;
+text-align: center;	
+text-transform: uppercase;	
+}
+#header{
+padding: 60px 0px;
+background: linear-gradient(to left,rgba(150,50,255,0.5),rgb(190,50,255));
+border-bottom: 1px solid #ccc; rgb(200,50,255);
+position: relative;
+}
+.menuIcon{
+margin-left: 70px;
+display: inline-block;
+}
+.menuIcon a i{
+padding: 5px;
+font-size: 80px;
+color: rgba(250,255,245,0.65);
+}
+.menuImgContainer{
+width: 168px;
+height: 168px;
+position: absolute;
+top: 25px;
+right: 50px;
+overflow: hidden;
+border-radius: 50%;
+box-sizing: border-box;
+}
+.menuImgRound{
+width: 162px;
+height: 162px;
+position: absolute;
+top: 2px;
+left: 2px;
+transform: translate(-2px,-2px);
+overflow: hidden;
+background: transparent;
+border-radius: 50%;
+border: 6px solid #109dff;
+transition: all 0.5s;
+box-sizing: border-box;
+}
+.menuImgWrapper{
+width: 136px;
+height: 136px;
+position: absolute;
+top: 7px;
+left: 7px;
+overflow: hidden;
+border-radius: 50%;
+background: transparent;
+box-sizing: border-box;
+margin: auto;
+transition: all 0.5s;
+}
+.menuImg{
+width: 100%;
+height: 100%;
+margin: auto;
+overflow: hidden;
+border-radius: 50%;
+background: transparent;
+transition: all 0.5s;
+}
+.menuImgContainer:hover .menuImgWrapper{
+width: 162x;
+height: 162px;
+position: absolute;
+top: -7px;
+left: 7px;
+background: transparent;
+}
+#titleSection{
+width: 100%;
+padding: 100px 0px;
+background: linear-gradient(270deg,rgba(0,0,0,0),rgba(150,50,255,0.15),rgba(150,50,255,0.85),rgb(150,50,255)),url(coverPic.jpg);
+background-size: cover;
+background-position: right;
+}
+.introduceTitle {
+margin: 10px 50px;
+padding: 30px 20px;
+display: inline-block;
+}
+.myName{
+font-size: 90px;
+font-weight: bold;
+color: rgba(210,210,210,0.8);
+}
+.hey{
+font-size: 80px;
+color: rgba(200,200,210,0.6);
+}
+.bigName{
+font-size: 110px;
+}
+.introduceDescription{
+color: rgba(15,40,45,0.85);
+font-size: 45px;
+font-weight: 400;
+}
+.introduceLearn a{
+text-decoration: none;
+font-size: 45px;
+font-weight: 400;
+color:rgba(200,200,210,0.6);
+}
+#workSection{
+position: relative;
+}
+.title{
+position: absolute;
+top: 100px;
+left: 50%;
+transform: translate(-50%,-50%);
+color: rgb(190,50,255);
+font-family: arial balck;
+font-size: 85px;
+z-index: 2;
+margin: 10px 0px;
+background: transparent;
+}
+.titleContainer {
+width: 90%;
+height: 210px;
+display: inline-block;
+text-transform: capitalize;
+margin-bottom: 120px;
+top: -40px;
+left: 50%;
+border-radius: 50%;
+transform: translate(-50%,-50%);
+position: relative;
+background: #fff;
+z-index: 1;
+margin-bottom: 100px;
+border-bottom: 1px solid rgba(190,50,255,0.4);
+}
+.workBigContainer {
+position: relative;
+}
+.workContainer {
+width: 70%;
+height: 400px;
+display: inline-block;
+margin: 100px 0px;
+position: relative;
+top: 0px;
+left: 50%;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+overflow: hidden;
+transition: linear 0.25s;
+}
+.workImgC{
+width: 100%;
+height: 100%;
+display: inline-block;
+margin: auto;
+z-index: 1;
+overflow: hidden;
+position: absolute;
+transition: linear 0.25s;
+}
+.workContainer:hover .workImgC{
+border-radius: 0px 50% 0px 0px;
+transform: translate(-37%,40px);
+}
+.workContainer:hover{
+border-radius: 0px 0px 0px 15%;
+}
+.workImg{
+width: 100%;
+height: 100%;
+align-items: center;
+justify-align: center;
+}
+.hiddenWork {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+right: 0;
+background: rgb(190,50,255);
+border-radius: 0px 180px 0px 0px;
+}
+.hiddenWork .workTitle {
+color: rgba(210,210,210);
+position: absolute;
+top: 50px;
+right: 45px;
+font-size: 70px;
+font-weight: bold;
+font-family: arial balck;
+text-transform: capitalize;
+}
+.hiddenWork .workLearn a {
+color: rgba(210,210,210);
+position: absolute;
+top: 125px;
+right: 45px;
+font-size: 45px;
+text-decoration: none;
+}
+#successSection{
+padding: 70px 0px;
+background: rgb(190,50,255);
+}
+.successExContainer{
+background: rgb(190,50,255);
+text-transform: capitalize;
+margin-bottom: -50px;
+border-bottom: 1px solid #ddd;
+}
+.successExTitle{
+text-transform: capitalize;
+color: #fff;
+}
+.successBigContainer{
+padding: 70px 0px;
+position: relative;
+}
+.successContainer{
+width: 95%;
+height: 200px;
+margin: auto;
+border-bottom: 1px dotted rgba(0,3,3,0.5);
+border-radius: 0px 0px 40% 0px;
+background: transparent;
+}
+.successTitle{
+text-align: center;
+font-size: 70px;
+font-weight: bold;
+font-family: arial balck;
+padding: 15px 0px;
+color: rgba(0,3,3,0.55);
+text-transform: capitalize;
+}
+.successCount{
+text-align: center;
+font-size: 60px;
+font-weight: bold;
+color: rgba(0,3,3,0.5);
+}
+.successContainer:last-child{
+border-bottom: none;
+}
+.teamBigContainer{
+padding: 70px;
+}
+.teamExTitleContainer{
+margin-top: 50px;			
+margin-bottom: -150px;
+}
+.teamContainer{
+width: 80%;
+height: 600px;
+position: relative;
+margin: 100px auto;
+background: #fff;
+display: block;
+overflow: hidden;
+}
+.teamSubContainer{
+width: 100%;
+height: 78%;
+display: block;
+position: absolute;
+background: #fff;
+overflow: hidden;
+z-index: 1;
+}
+.partnerImgContainer{
+width: 298px;
+height: 298px;
+position: absolute;
+top: 150px;
+left: 50%;
+transform: translate(-50%,-50%);
+display: block;
+overflow: hidden;
+border-radius: 50%; 
+box-sizing: border-box;
+background: transparent;
+}
+.partnerImgRound{
+width: 298px;
+height: 298px;
+position: absolute;
+top: 0px;
+left: 0px;
+overflow: hidden;
+background: transparent;
+border-radius: 50%;
+border: 10px solid #109dff;
+transition: all 0.5s;
+box-sizing: border-box;
+}
+.partnerImgWrapper{
+width: 262px;
+height: 262px;
+position: absolute;
+top: 8px;
+left: 8px;
+overflow: hidden;
+border-radius: 50%;
+background: transparent;
+box-sizing: border-box;
+margin: auto;
+transition: all 0.5s;
+}
+.partnerImg{
+width: 100%;
+height: 100%;
+margin: auto;
+overflow: hidden;
+box-sizing: border-box;
+border-radius:
+background: transparent;
+transition: all 0.5s;
+}
+.partnerName{
+width: 95%;
+font-size: 60px;
+font-weight: bold;	
+position: absolute;
+top: 320px;
+left: 50%;
+margin: auto;
+text-align: center;
+transform: translate(-50%,0px);
+text-transform: capitalize;
+color: rgba(4,3,3,0.55);
+overflow: hidden;
+background: #fff;
+}
+.partnerClass{
+width: 90%;
+font-size: 45px;
+position: absolute;
+top: 400px;
+left: 50%;
+transform: translate(-50%,0px);
+text-align: center;
+color: rgba(4,3,3,0.5);			
+background: #fff;	
+text-transform: capitalize;				
+margin: auto;
+}
+.partnerSocial{
+width: 100%;
+height: 22%;			
+margin: auto;
+padding: 25x 0px;
+text-align: center;
+position: absolute;
+top: 330px;
+overflow: hidden;
+background: transparent;
+transition: linear 0.5s;
+}
+.teamContainer:hover .partnerSocial{
+transform: translateY(130px);		
+}
+.partnerSocial .socialP{
+width: 100px;
+height: 100px;
+margin: 20px;
+padding: 30px;
+border-radius: 100%;
+background: transparent;
+box-sizing: border-box;
+outline: 0;
+border: 1px solid #109dff;
+display: inline-block;
+}
+.partnerSocial .socialP i{
+padding: 0px;
+font-size: 50px;
+border-radius: 50%;
+box-sizing: border-box;
+color: #109dff;
+}
+.socialP:hover{
+background: #109dff;										
+}
+.socialP:hover i{	
+color: #fff;		
+}
+#workWithSection{
+background: linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0.7),rgba(0,0,0,0.98)),url(workWith.jpg);
+background-positon: right;
+background-size: cover;
+}
+.workWithCon{
+background: transparent;
+margin: 20px 90px;
+}
+.workWithTitle{
+font-family: arial balck;				
+font-size: 80px;			
+color: rgba(255,254,250,0.8);	
+text-transform: capitalize;			
+}
+.workWithSubTitle{
+color: rgba(242,243,240,0.7);				
+font-size: 60px;			
+margin: 15px 0px;	
+margin-top: 25px;
+text-transform: capitalize;
+}
+.hireBtn{
+transition: linear 0.5s;	
+}
+.hireBtn:hover{
+border: 2px solid #109dff;
+color: #109dff;
+background: transparent;
+}
+.galleryTitleContainer{
+width: 90%;
+height: 210px;
+display: inline-block;
+text-transform: capitalize;
+margin-bottom: 50px;
+top: 200px;
+left: 50%;
+border-radius: 50%;
+transform: translate(-50%,-50%);
+position: relative;
+background: #fff;
+z-index: 1;
+margin-bottom: 0px;
+border-bottom: 1px solid rgba(190,50,255,0.4);
+}
+.galleryTitle{
+position: absolute;
+top: 100px;
+left: 50%;
+transform: translate(-50%,-50%);
+color: rgb(190,50,255);
+font-family: arial balck;
+font-size: 85px;
+margin: 10px 0px;
+background: transparent;
+}
+.galleryBigContainer{
+width: 85%;				
+margin: 200px auto;			
+}
+.galleryImgContainer{
+width: 30%;
+height: 330px;
+margin: 12px;
+display: inline-block;			
+border-radius: 40px 0px 60px 0px;		
+}
+.galleryImg{
+width: 100%;
+height: 100%;
+border-radius: 40px 0px 60px 0px;
+}
+#subscribeSection{
+background: linear-gradient(to left,rgba(0,0,0,0.6),rgba(0,0,0,0.7),rgba(0,0,0,0.98));
+background-positon: right;
+background-size: cover;
+padding: 70px 0px;
+}
+.subscribeContainer{
+width: 90%;
+margin: 10px auto;
+padding: 20px 0px;
+}
+.subscribeTitle{
+font-family: arial balck;				
+font-size: 80px;		
+margin: 20px 0px 50px 10px;	
+color: rgba(255,254,250,0.8);	
+text-transform: capitalize;								
+}
+.subsInput{
+width: 62%;		
+height: 110px;		
+margin: 0px 10px;
+padding: 0px 15px;
+display: inline-block;				
+font-size: 50px;	
+color: #109dff;
+background: transparent;
+border: 1px solid #109dff;
+border-radius: 25px;
+outline: none;
+}
+.subsInput::placeholder {
+font-size: 50px;			
+color: #109dff;								
+}
+.subscribeBtn{
+width: 30%;
+height: 110px;
+display: inline-block;
+font-size: 50px;			
+font-weight: bold;		
+background: transparent;
+border: 1px solid #109dff;
+border-radius: 25px;
+color: #109dff;
+outline: none;
+transition: linear 0.5s;
+}
+.subscribeBtn:hover{
+background: #109dff;
+color: #fff;				
+}
+#contactSection{
+background: rgba(0,0,0,0.98);
+padding: 70px 0px;
+}
+.contactContainer{
+width: 90%;
+margin: 10px auto;
+padding: 20px 0px;						
+}
+.contactTitle{
+font-family: arial balck;				
+font-size: 80px;		
+margin: 20px 0px 50px 10px;	
+color: rgba(255,254,250,0.8);	
+text-transform: capitalize;				
+}
+.contactEmail{
+color: rgba(242,243,240,0.7);
+font-size: 50px;		
+font-weight: bold;
+margin: 10px 5px;
+}
+.contactEmail i{
+margin: 0px 10px;
+}
+.contactNumber{
+font-weight: bold;
+color: rgba(242,243,240,0.7);				
+font-size: 50px;		
+margin: 0px 5px;
+}
+.contactNumber i{
+margin: 0px 10px;	
+}
+#meetSection{
+background: #fff;
+padding: 70px 0px;
+}
+.meetContainer{
+width: 90%;
+margin: 10px auto;
+padding: 20px 0px;						
+}
+.meetTitle{
+font-family: arial balck;				
+font-size: 80px;		
+margin: 20px 0px 50px 10px;	
+color: rgb(190,50,255);	
+text-transform: capitalize;			
+text-align: center;	
+}
+.locationIcon{
+font-size: 70px;
+text-align: center;
+Color: rgba(25,23,24,0.3);				
+margin: 0px;			
+margin-top: 70px;
+}
+.locationDetails{
+font-size: 50px;
+text-align: center;
+Color: rgba(25,23,24,0.3);			
+}
+#footerSection{
+background: rgba(0,0,0,0.98);
+padding-top: 70px;
+}
+.footerContainer{
+width: 90%;
+margin: 10px auto;
+padding: 20px 0px;								
+}
+.footerIconContainer{
+text-align: center;			
+}
+.footerIconContainer a{
+text-transform: none;				
+outline: none;				
+text-align: center;
+color: rgba(250,250,255,0.3);
+}
+.footerIconContainer a i{
+font-size: 40px;
+margin: 0px 15px;
+}
+.policyContainer{
+width: 90%;
+margin: 10px auto;
+padding: 30px 0px;	
+text-align: center;							
+}
+.policyDetails{
+font-size: 40px;				
+text-align: center;	
+}
+.policyDetails .policyA{
+margin: 0px 10px;			
+text-decoration: none;	
+padding: 5px 0px;		
+color: rgba(250,250,255,0.3);	
+}
+.policyDetails .policyA:hover{
+text-decoration: underline;			
+}
+.allRight{
+margin: 20px 10px;
+padding: 10px;
+color: rgba(245,244,243,0.3);	
+text-align: right;			
+font-size: 31px;			
+}
+.allRight .allRightA{
+font-size: 33px;			
+text-decoration: none;
+color: rgba(10,122,255,0.3);
+}
+
+</style>
+</head>
+<body>
+<!--------header-------->
+<header id="header">
+<div class="menuIcon">
+<a href="index.html" ><i class="fas fa-bars"></i></a>
+</div>
+<div class="menuImgContainer">
+<div class="menuImgRound">
+<div class="menuImgWrapper">
+<a href="#"class="menuImgA" >
+<img src="menuProfile.jpg" alt=""class="menuImg">
+</a>
+</div>
+</div>
+</div>
+</header>
+<!------introduce section---------->
+<section id="titleSection"class="sectionContainer">
+<div class="introduceTitle">
+<h2 class="myName"><span class="hey">Hey,</span><br>I'm <span class="bigName">Shahriyar</span></h2>
+<p class="introduceDescription">A professional <br>photographer, editor <br>& designer!<br>
+I'm here to solve your <br>problems with natural photography!<br>
+Let's do something!</p>
+<p class="introduceLearn"><a href="introduce.html" >Learn more...</a></p>
+</div>
+</section>
+<!-----work section--------->
+<section id="workSection" class="Container">
+<div class="titleContainer">
+<h2 class="title">What I Do</h2>
+</div>
+
+<div class="workBigContainer">
+<div class="workContainer">
+<div class="workImgC">
+<img class="workImg" src="proposal.jpeg" alt="">
+</div>
+<div class="hiddenWork">
+<h4 class="workTitle">Proposal</h4>
+<p class="workLearn"><a href="proposal.html" >Learn more</a></p>
+</div>
+</div>
+<div class="workContainer">
+<div class="workImgC">
+<img class="workImg" src="relationship.jpeg" alt="">
+</div>
+<div class="hiddenWork">
+<h4 class="workTitle">Relationship</h4>
+<p class="workLearn"><a href="relationship.html" >Learn more</a></p>
+</div>
+</div>
+<div class="workContainer">
+<div class="workImgC">
+<img class="workImg" src="breakUp.jpeg" alt="">
+</div>
+<div class="hiddenWork">
+<h4 class="workTitle">Break Up</h4>
+<p class="workLearn"><a href="breakUp.html" >Learn more</a></p>
+</div>
+</div>
+<div class="workContainer">
+<div class="workImgC">
+<img class="workImg" src="flowerGift.jpeg" alt="">
+</div>
+<div class="hiddenWork">
+<h4 class="workTitle">Flower Gift</h4>
+<p class="workLearn"><a href="flowerGift.html" >Learn more</a></p>
+</div>
+</div>
+<div class="workContainer">
+<div class="workImgC">
+<img class="workImg" src="messages.jpeg" alt="">
+</div>
+<div class="hiddenWork">
+<h4 class="workTitle">Messages</h4>
+<p class="workLearn"><a href="messages.html" >Learn more</a></p>
+</div>
+</div>
+<div class="workContainer">
+<div class="workImgC">
+<img class="workImg" src="cuteLove.jpeg" alt="">
+</div>
+<div class="hiddenWork">
+<h4 class="workTitle">Cute Love</h4>
+<p class="workLearn"><a href="cuteLove.html" >Learn more</a></p>
+</div>
+</div>
+</div>
+</section>
+<!-------success section---->
+<section id="successSection" class="Container">
+<div class="titleContainer successExContainer">
+<h2 class="title successExTitle">My Success</h2>
+</div>
+
+<div class="successBigContainer">
+<div class="successContainer">
+<h3 class="successTitle">Help Proposal</h3>
+<h4 class="successCount">3162</h4>
+</div>
+<div class="successContainer">
+<h3 class="successTitle">Help Relationship</h3>
+<h4 class="successCount">3031</h4>
+</div>
+<div class="successContainer">
+<h3 class="successTitle">Recover BreakUp</h3>
+<h4 class="successCount">1264</h4>
+</div>
+</div>
+</section>
+<!-------Team Section--------->
+<section id="teamSection">
+<div class="titleContainer teamExTitleContainer">
+<h2 class="title">My Team</h2>
+</div>
+<div class="teamBigContainer">
+
+<div class="teamContainer">
+<div class="teamSubContainer">
+<div class="partnerImgContainer">
+<div class="partnerImgRound">
+<div class="partnerImgWrapper">
+<img src="partner01.jpg" alt="Team"class="partnerImg">
+</div>
+</div>
+</div>
+<h4 class="partnerName">Alo Azgor</h4>
+<p class="partnerClass">Leader</p>
+</div>
+<div class="partnerSocial">
+<p class="socialP"><a href="https://www.facebook.com/md.aliazgor.5496" ><i class="fab fa-facebook-f"></i></a></p>
+<p class="socialP"><a href="#" ><i class="fab fa-twitter"></i></a></p>
+<p class="socialP"><a href="#" ><i class="fab fa-instagram"></i></a></p>
+</div>
+</div>
+
+<div class="teamContainer">
+<div class="teamSubContainer">
+<div class="partnerImgContainer">
+<div class="partnerImgRound">
+<div class="partnerImgWrapper">
+<img src="partner02.jpg" alt="Team"class="partnerImg">
+</div>
+</div>
+</div>
+<h4 class="partnerName">Rezwan Mahmoud</h4>
+<p class="partnerClass">Co-leader</p>
+</div>
+<div class="partnerSocial">
+<p class="socialP"><a href="https://www.facebook.com/rezwan.mahmud.942" ><i class="fab fa-facebook-f"></i></a></p>
+<p class="socialP"><a href="#" ><i class="fab fa-twitter"></i></a></p>
+<p class="socialP"><a href="#" ><i class="fab fa-instagram"></i></a></p>
+</div>
+</div>
+
+<div class="teamContainer">
+<div class="teamSubContainer">
+<div class="partnerImgContainer">
+<div class="partnerImgRound">
+<div class="partnerImgWrapper">
+<img src="partner03.jpg" alt="Team"class="partnerImg">
+</div>
+</div>
+</div>
+<h4 class="partnerName">Nafis Iqbal Tamim</h4>
+<p class="partnerClass">Advisor</p>
+</div>
+<div class="partnerSocial">
+<p class="socialP"><a href="https://www.facebook.com/nafisiqbal.tamim" ><i class="fab fa-facebook-f"></i></a></p>
+<p class="socialP"><a href="https://www.twitter.com/@NITamim1" ><i class="fab fa-twitter"></i></a></p>
+<p class="socialP"><a href="https://www.instagram.com/nafisiqbaltamim" ><i class="fab fa-instagram"></i></a></p>
+</div>
+</div>
+
+<div class="teamContainer">
+<div class="teamSubContainer">
+<div class="partnerImgContainer">
+<div class="partnerImgRound">
+<div class="partnerImgWrapper">
+<img src="partner04.jpg" alt="Team"class="partnerImg">
+</div>
+</div>
+</div>
+<h4 class="partnerName">Mohammad Hasan</h4>
+<p class="partnerClass">Co-Advisor</p>
+</div>
+<div class="partnerSocial">
+<p class="socialP"><a href="https://www.facebook.com/HasanOfficial27/" ><i class="fab fa-facebook-f"></i></a></p>
+<p class="socialP"><a href="http://www.twitter.com/@HasanOfficial27" ><i class="fab fa-twitter"></i></a></p>
+<p class="socialP"><a href="https://www.instagram.com/h_mohammad_hasan" ><i class="fab fa-instagram"></i></a></p>
+</div>
+</div>
+
+</div>
+</section>
+<!---------work with section------->
+<section id="workWithSection">
+				
+<div class="workWithCon Container">
+<h3 class="workWithTitle">Wanna work with me?</h3>				
+<h4 class="workWithSubTitle">Find me here!</h4>				
+<button class="hireBtn btn">Hire me</button>
+</div>
+							
+</section>
+<!------Gallery----->
+<section id="gallerySection">
+<div class="galleryTitleContainer">
+<h2 class="galleryTitle">Gallery</h2>
+</div>			
+<div class="galleryBigContainer Container">
+
+<div class="galleryImgContainer">
+<img src="image01.jpg" class="galleryImg"alt="Gallery">			
+</div>				
+<div class="galleryImgContainer">
+<img src="image02.jpg" class="galleryImg"alt="Gallery">			
+</div>								
+<div class="galleryImgContainer">
+<img src="image03.jpg" class="galleryImg"alt="Gallery">			
+</div>				
+<div class="galleryImgContainer">
+<img src="image04.jpg" class="galleryImg"alt="Gallery">			
+</div>				
+<div class="galleryImgContainer">
+<img src="image05.jpg" class="galleryImg"alt="Gallery">			
+</div>
+<div class="galleryImgContainer">
+<img src="image06.jpg" class="galleryImg"alt="Gallery">			
+</div>				
+<div class="galleryImgContainer">
+<img src="image07.jpg" class="galleryImg"alt="Gallery">			
+</div>				
+<div class="galleryImgContainer">
+<img src="image08.jpg" class="galleryImg"alt="Gallery">			
+</div>		
+<div class="galleryImgContainer">
+<img src="image09.jpg" class="galleryImg"alt="Gallery">			
+</div>
+								
+</div>			
+</section>
+<!------Keep in touch----->
+<section id="subscribeSection">
+				
+<div class="subscribeContainer">
+<h3 class="subscribeTitle">Keep in touch</h3>
+<input type="email" class="subsInput" placeholder="Enter Your Email">							
+<button class="subscribeBtn">Subscribe</button>
+</div>
+		
+</section>
+<!-----contact------>
+<section id="contactSection">
+				
+<div class="contactContainer">
+<h3 class="contactTitle">Contact With Me</h3>
+<p class="contactEmail"><i class="fas fa-envelope"></i>shahriyar.a234@gmail.com</p>
+<p class="contactNumber"><i class="fas fa-phone-square-alt"></i>+8801968099314</p>
+</div>			
+	
+</section>
+<!------Meet--->
+<section id="meetSection">
+
+<div class="meetContainer">
+<h3 class="meetTitle">Meet with me?</h3>			
+<p class="locationIcon"><i class="fas fa-map-marker-alt"></i></p>
+<p class="locationDetails">Jadur Char <br>Rowmari, Kurigram<br>Dhaka Bangladesh.</p>	
+</div>				
+				
+</section>
+<!--------footer------->
+<footer id="footerSection">
+				
+<div class="footerContainer">
+				
+<div class="footerIconContainer">
+<a href="https://www.facebook.com/shahriyarahmed.shuvo.50"><i class="fab fa-twitter"></i></a>	<a href="https://www.facebook.com/shahriyarahmed.shuvo.50"><i class="fab fa-facebook-f"></i></a>				
+<a href="https://www.facebook.com/shahriyarahmed.shuvo.50"><i class="fab fa-instagram"></i></a>							
+</div>			
+<div class="policyContainer">
+				
+<p class="policyDetails"><a href="terms.html" class="policyA">Terms and Conditions</a><br><a href="returnP.html" class="policyA">Return Policy</a><a href="securityP.html" class="policyA">Security Policy</a><br><a href="privacyP.html"class="policyA" >Privacy Policy</a></p>								
+</div>				
+<p class="allRight">All Rights Reserved By <a href="https://www.about.me/m_hasanuzzaman" class="allRightA">Mohammad Hasan</a></p>
+</div>		
+</footer>
+
+</body>
+</html>

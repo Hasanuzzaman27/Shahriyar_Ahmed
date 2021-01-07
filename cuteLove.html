@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/6170a6ae3e.js" crossorigin="anonymous"></script>
+<title>A cute Love story</title>
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+}
+body{
+margin: 0;
+padding: 0;
+}
+.Container{
+padding: 70px 0px;
+}
+#header{
+padding: 60px 0px;
+background: linear-gradient(to left,rgba(150,50,255,0.5),rgb(190,50,255));
+border-bottom: 1px solid #ccc; rgb(200,50,255);
+position: relative;
+}
+.menuIcon{
+margin-left: 70px;
+display: inline-block;
+}
+.menuIcon a i{
+padding: 5px;
+font-size: 80px;
+color: rgba(250,255,245,0.65);
+}
+.menuImgContainer{
+width: 168px;
+height: 168px;
+position: absolute;
+top: 25px;
+right: 50px;
+overflow: hidden;
+border-radius: 50%;
+box-sizing: border-box;
+}
+.menuImgRound{
+width: 162px;
+height: 162px;
+position: absolute;
+top: 2px;
+left: 2px;
+transform: translate(-2px,-2px);
+overflow: hidden;
+background: transparent;
+border-radius: 50%;
+border: 6px solid #109dff;
+transition: all 0.5s;
+box-sizing: border-box;
+}
+.menuImgWrapper{
+width: 136px;
+height: 136px;
+position: absolute;
+top: 7px;
+left: 7px;
+overflow: hidden;
+border-radius: 50%;
+background: transparent;
+box-sizing: border-box;
+margin: auto;
+transition: all 0.5s;
+}
+.menuImg{
+width: 100%;
+height: 100%;
+margin: auto;
+overflow: hidden;
+border-radius: 50%;
+background: transparent;
+transition: all 0.5s;
+}
+#postSection{
+padding: 100px 0px;				
+}
+.postContainer{
+margin: 0px 60px;	
+padding: 50px 20px;
+}
+.paragraphTitle{
+font-family: arial balck;
+font-size: 70px;		
+Color: rgba(25,23,24,0.7);						
+}
+.paragraph {
+margin: 25px 0px;				
+Color: rgba(5,3,4,0.5);	
+font-size: 	45px;				
+}
+.paragraphLink{
+font-size: 	45px;					
+Color: rgba(15,100,255,0.6);		
+font-weight: bold;					
+}
+.paragraphUl {
+Color: rgba(5,3,4,0.5);	
+font-size: 	45px;	
+margin: 0px 30px;							
+}
+.paragraphOl {
+Color: rgba(5,3,4,0.5);	
+font-size: 	45px;	
+margin: 0px 40px;							
+}
+.paragraphLi {
+Color: rgba(5,3,4,0.5);	
+font-size: 	45px;					
+}
+.bold{
+font-weight: bold;				
+Color: rgba(5,3,4,0.6);		
+}
+#subscribeSection{
+background: linear-gradient(to left,rgba(0,0,0,0.6),rgba(0,0,0,0.7),rgba(0,0,0,0.98));
+background-positon: right;
+background-size: cover;
+padding: 70px 0px;
+}
+.subscribeContainer{
+width: 90%;
+margin: 10px auto;
+padding: 20px 0px;
+}
+.subscribeTitle{
+font-family: arial balck;				
+font-size: 80px;		
+margin: 20px 0px 50px 10px;	
+color: rgba(255,254,250,0.8);	
+text-transform: capitalize;							
+}
+.subsInput{
+width: 62%;		
+height: 110px;		
+margin: 0px 10px;
+padding: 0px 15px;
+display: inline-block;				
+font-size: 50px;	
+color: #109dff;
+background: transparent;
+border: 1px solid #109dff;
+border-radius: 25px;
+outline: none;
+}
+.subsInput::placeholder {
+font-size: 50px;			
+color: #109dff;								
+}
+.subscribeBtn{
+width: 30%;
+height: 110px;
+display: inline-block;
+font-size: 50px;			
+font-weight: bold;		
+background: transparent;
+border: 1px solid #109dff;
+border-radius: 25px;
+color: #109dff;
+outline: none;
+transition: linear 0.5s;
+}
+.subscribeBtn:hover{
+background: #109dff;
+color: #fff;				
+}
+#contactSection{
+background: rgba(0,0,0,0.98);
+padding: 70px 0px;
+}
+.contactContainer{
+width: 90%;
+margin: 10px auto;
+padding: 20px 0px;						
+}
+.contactTitle{
+font-family: arial balck;				
+font-size: 80px;		
+margin: 20px 0px 50px 10px;	
+color: rgba(255,254,250,0.8);	
+text-transform: capitalize;				
+}
+.contactEmail{
+color: rgba(242,243,240,0.7);
+font-size: 50px;		
+font-weight: bold;
+margin: 10px 5px;
+}
+.contactEmail i{
+margin: 0px 10px;
+}
+.contactNumber{
+font-weight: bold;
+color: rgba(242,243,240,0.7);				
+font-size: 50px;		
+margin: 0px 5px;
+}
+.contactNumber i{
+margin: 0px 10px;	
+}
+#footerSection{
+background: rgba(0,0,0,0.98);
+padding-top: 70px;
+}
+.footerContainer{
+width: 90%;
+margin: 10px auto;
+padding: 20px 0px;								
+}
+.footerIconContainer{
+text-align: center;			
+}
+.footerIconContainer a{
+text-transform: none;				
+outline: none;				
+text-align: center;
+color: rgba(250,250,255,0.3);
+}
+.footerIconContainer a i{
+font-size: 40px;
+margin: 0px 15px;
+}
+.policyContainer{
+width: 90%;
+margin: 10px auto;
+padding: 30px 0px;	
+text-align: center;							
+}
+.policyDetails{
+font-size: 40px;				
+text-align: center;	
+}
+.policyDetails .policyA{
+margin: 0px 10px;			
+text-decoration: none;	
+padding: 5px 0px;		
+color: rgba(250,250,255,0.3);	
+}
+.policyDetails .policyA:hover{
+text-decoration: underline;			
+}
+.allRight{
+margin: 20px 10px;
+padding: 10px;
+color: rgba(245,244,243,0.3);	
+text-align: right;			
+font-size: 31px;			
+}
+.allRight .allRightA{
+font-size: 33px;			
+text-decoration: none;
+color: rgba(10,122,255,0.3);
+}
+
+</style>
+</head>
+<body>
+<!--------header-------->
+<header id="header">
+<div class="menuIcon">
+<a href="index.html" ><i class="fas fa-bars"></i></a>
+</div>
+<div class="menuImgContainer">
+<div class="menuImgRound">
+<div class="menuImgWrapper">
+<a href="index.html"class="menuImgA" >
+<img src="menuProfile.jpg" alt=""class="menuImg">
+</a>
+</div>
+</div>
+</div>
+</header>
+<!---------introduce Artical--------->
+<section id="postSection">
+<div class="postContainer">
+<h3 class="paragraphTitle">A cute love story!</h3>	
+<p class="paragraph">Love! What does it mean?
+<br>People generally says that "I love him/her very much!" But what they do?<br>What is the definition of love?<br> I wanna discuss about the actual meaning of love! We want to how to love someone. Share your thoughts with me!<br>For this we wanna read a love story to realise the meaning of actual love. Let's start!</p>
+<p class="paragraph"> 
+A boy and girl were walking side by side, hand in hand. A cool wind was flowing, with light drizzle, an ideal romantic day.</p>
+<p class="paragraph">
+Suddenly, the girl stopped and looked at the boy. Boy was startled but quiet.</p>
+
+<p class="paragraph">Girl:" Can I ask you one question?"</p>
+<p class="paragraph">Boy: "Yes". (With a smile).</p>
+<p class="paragraph">Girl:" I want to know today, why you love me? Please, Can you answer me directly? I want an answer from the heart."
+</p>
+<p class="paragraph">Boy smilingly knelt down, holding her hands closer to his chest, as if to immerse all his prayers inside her.</p>
+<p class="paragraph">Boy:" I love you...yes I do. I don't know why, and I never want to know why. I just feel with you by my side, I don't want to think of the past, I don't want to be scared of the future. <br>I just want to live in present. I just want to live life with you. With you by my side, this life feels so good, so worthwhile. If my life is a road, you are the directions. When you stand beside me, I don't want to know whether I would be alive after the next five minutes. <br>I just want to say that even if death comes to me after 5 minutes, I will embrace it smilingly, because, my last memory will be you. You are the best thing that happened to me personally, and I want to cherish it till my last breath".</p>
+<p class="paragraph">Girl couldn't hold herself any longer. She burst into tears and hugged him tight, as if to never let him go.</p>
+<p class="paragraph">Girl (teary-eyed) " I love you".</p>
+<p class="paragraph">Boy: "I love you too".</p>
+<p class="paragraph">Heavens poured from above. They drenched in the rain of love.</p>
+<p class="paragraph">After all, love is God's blessings, isn't it?
+</p>
+<p class="paragraph">What's can we know and understand by reading such this story?</p>
+<p class="paragraph">Lover never Die!</p>
+<p class="paragraph">I am here to solve and help such of this problems which already happened in your morning life.<br>Thre is going a proverbs "Life is not a play boy!". Such like this, you waste your time waiting for him/her. But there is ko response from her/him. She/he is playing with your proposal just like a football. Don't worry! I'm here to help you!</b></p>			
+<p class="paragraph">Just know that, Pain can never be strengthened then your attitude. You will do something that brings your happiness and hopes in future.</p>
+<p class="paragraph">Thanks.</p>
+<p class="paragraph">Shahriyar Ahmed Shuvo</p>
+			
+</div>
+</section>
+<!------Keep in touch----->
+<section id="subscribeSection">
+				
+<div class="subscribeContainer">
+<h3 class="subscribeTitle">Keep in touch</h3>
+<input type="email" class="subsInput" placeholder="Enter Your Email">							
+<button class="subscribeBtn">Subscribe</button>
+</div>
+		
+</section>
+<!-----contact------>
+<section id="contactSection">
+				
+<div class="contactContainer">
+<h3 class="contactTitle">Contact With Me</h3>
+<p class="contactEmail"><i class="fas fa-envelope"></i>shahriyar.a234@gmail.com</p>
+<p class="contactNumber"><i class="fas fa-phone-square-alt"></i>+8801968099314</p>
+</div>			
+	
+</section>
+<!--------footer------->
+<footer id="footerSection">
+				
+<div class="footerContainer">
+				
+<div class="footerIconContainer">
+<a href="https://www.facebook.com/shahriyarahmed.shuvo.50"><i class="fab fa-twitter"></i></a>	<a href="https://www.facebook.com/shahriyarahmed.shuvo.50"><i class="fab fa-facebook-f"></i></a>				
+<a href="https://www.facebook.com/shahriyarahmed.shuvo.50"><i class="fab fa-instagram"></i></a>							
+</div>			
+<div class="policyContainer">
+				
+<p class="policyDetails"><a href="terms.html" class="policyA">Terms and Conditions</a><br><a href="returnP.html" class="policyA">Return Policy</a><a href="securityP.html" class="policyA">Security Policy</a><br><a href="privacyP.html"class="policyA" >Privacy Policy</a></p>								
+</div>				
+<p class="allRight">All Rights reserved By <a href="https://www.about.me/m_hasanuzzaman" class="allRightA">Mohammad Hasan</a></p>
+</div>		
+</footer>
+
+</body>
+</html>
